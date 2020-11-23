@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+html {
+  font-family: Ubuntu, system-ui, sans-serif;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  background-color: #c8d6e5;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border: 2px solid #48dbfb;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+main img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  box-shadow: 8px 8px 8px #222f3e;
+}
+main img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  box-shadow: 8px 8px 8px #222f3e;
+}
+/* TRANSITION CSS*/
+img:hover {
+  transition-delay: 3s;
+  transition: height 3s, width 2s;
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  box-shadow: 8px 8px 8px #222f3e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: rgb(56, 184, 243);
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+span {
+  background-color: #8395a7;
+  color: white;
+}
+
+footer {
+  font-weight: bold;
+  color: #8395a7;
+  text-align: center;
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+  color: #8395a7;
+}
+
+@media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 1.8rem;
+    line-height: 1.55;
+  }
+
+  main img {
+    margin: 10px 0 10px 0;
+  }
+  img:hover {
+    transition-delay: 3s;
+    transition: height 3s, width 2s;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    box-shadow: 8px 8px 8px #222f3e;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+}
